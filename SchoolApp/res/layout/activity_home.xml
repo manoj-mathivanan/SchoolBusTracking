@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context="com.saratrak.sisschool.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:background="@drawable/bottom_tab_bar_bg" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".333"
+            android:drawableTop="@drawable/bottom_tab_bar_alerts"
+            android:background="@drawable/button_style"
+            android:textSize="15dp"
+            android:onClick="alertscreen"
+            android:text="ALERTS"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom_tab_bar_video_feed"
+            android:layout_weight=".333"
+            android:background="@drawable/button_style"
+            android:text="VIDEO FEED"
+            android:onClick="videoscreen"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"  />
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/bottom_tab_bar_settings"
+            android:background="@drawable/button_style"
+            android:layout_weight=".333"
+            android:text="SETTINGS"
+            android:onClick="settingscreen"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/test"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+		android:dividerHeight="0dp"
+        android:layout_below="@+id/textViewStatus" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewName"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="#1d1d26"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewStatus"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/settings_list_view_divider3x" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="260dp" />
+
+    <ImageView
+        android:id="@+id/imageButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="-50dp"
+        android:onClick="profilesettings"
+        android:layout_alignBottom="@+id/map"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/kidpic" />
+    
+     <ImageView
+        android:id="@+id/imageButton2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/imageButton1"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_weight="2"
+        android:onClick="profilesettings"
+        android:src="@drawable/change_profile_pic" />
+    
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="VIKRAM SINGH"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#be940d" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/map"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/home_map_enlarge_button"
+        android:onClick="mapfullscreen" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/map"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/compress_icon"
+        android:onClick="maphalfscreen" />
+
+</RelativeLayout>

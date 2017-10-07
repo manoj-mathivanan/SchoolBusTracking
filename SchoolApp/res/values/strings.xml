@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIS Tracko</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_bg">LoginBackground</string>
+    <string name="sign_in">Sign In</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+
+<string name="crash_dialog_title">App has crashed</string>
+<string name="crash_dialog_text">Sorry App has crashed. Please help us fix it by sending us the error report.</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Alerts</item>
+        <item>Video Feed</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/sidemenu_home_icon</item>
+        <item>@drawable/sidemenu_alerts_icon</item>
+        <item>@drawable/sidemenu_video_feed_icon</item>
+        <item>@drawable/sidemenu_settings_icon</item>
+        <item>@drawable/sidemenu_logout_icon</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_password">PasswordActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_faq">FAQActivity</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+
+</resources>

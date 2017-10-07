@@ -1,0 +1,9 @@
+<resources>
+	<style name="CustomWindowTitleBarBG">
+		<item name="android:background">#FFFFFF</item>
+    </style>
+    
+    <style name="TitleBarTheme" parent="AppTheme">
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBarBG</item>
+    </style>
+</resources>

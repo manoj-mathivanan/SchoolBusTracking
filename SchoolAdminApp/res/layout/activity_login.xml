@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saratrak.sisschool.LoginActivity" 
+    android:background="@android:color/white">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginLeft="12dp"
+        android:visibility="gone" /> 
+        
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" 
+        android:src="@drawable/signin_top_bg3x" 
+        android:contentDescription="@string/login_bg"/>"
+
+    
+
+    
+
+    
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/signin_bottom_logo3x" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:nextFocusDown="@+id/textView2"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#1d1d26" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="18dp"
+        android:text="PASSWORD"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ED3237" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:nextFocusDown="@+id/button1"
+        android:password="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#1d1d26" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="20dp"
+        android:background="#ED3237"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:onClick="forgotpassword"
+        android:background="@android:color/white"
+        android:text="FORGOT PASSWORD?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ED3237" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ED3237" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="13dp"
+        android:text="ADMIN ID"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ED3237" />
+
+</RelativeLayout>

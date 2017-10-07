@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saratrak.sisschool.admin"
+    android:versionCode="1"
+    android:versionName="1.0"
+     >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+ 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    
+
+    <application
+        android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="SIS Admin"
+        android:theme="@style/TitleBarTheme"
+        android:windowSoftInputMode="adjustPan" >
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.saratrak.sisschool.admin" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.saratrak.sisschool.admin.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="org.acra.CrashReportDialog"
+        android:theme="@style/Theme.Dialog"
+        android:process=":error_report"
+        android:launchMode="singleInstance"
+        android:excludeFromRecents="true"
+        android:finishOnTaskLaunch="true" />
+        
+        <activity
+            android:name="com.saratrak.sisschool.admin.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.saratrak.sisschool.admin.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_main" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBeJ7dYLM5lIlLzyO5CWciJVKovWgZipoE" />
+<!-- AIzaSyAZ4khuBTBX_43psdIsMzxyfaEei2WArJo -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.saratrak.sisschool.admin.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.saratrak.sisschool.admin.MapActivity"
+            android:screenOrientation="portrait"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.saratrak.sisschool.admin.UpdateActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name="com.saratrak.sisschool.admin.AlertActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name="com.saratrak.sisschool.admin.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_profile" >
+        </activity>
+
+        <activity
+            android:name="com.saratrak.sisschool.admin.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:label="About Us" >
+        </activity>
+    </application>
+    <!-- To access Google+ APIs: -->
+
+</manifest>

@@ -1,0 +1,6 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>adminapp&\#x0A;&\#x0A;Signed-off-by\: Manoj Mathivanan &lt;manoj.mathivanan@sap.com&gt;</message>\r\n<message>busarrival duration&\#x0A;&\#x0A;Change-Id\: I0000000000000000000000000000000000000000&\#x0A;</message>\r\n<message>main activity list</message>\r\n<message>list activity</message>\r\n<message>main activity banner</message>\r\n<message>second commit</message>\r\n<message>first change</message>\r\n<message>admin app initial commit</message>\r\n<message>SchoolApp Android</message>\r\n</messages>
+eclipse.preferences.version=1
+merge_mode=0
+resourcehistory_compare_mode=true
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

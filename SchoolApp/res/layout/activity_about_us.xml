@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saratrak.sisschool.AboutUsActivity"
+     >
+
+    <ImageView
+        android:id="@+id/about_us3x"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:onClick="openbrowser"
+        android:src="@drawable/about_us3x" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"
+        android:gravity="center" 
+        android:textSize="17dp"
+        android:text="Saratrak is a company of highly talented professionals who push GPS tracking technology to the next level.
+We create, innovate and re-innovate all over again to ensure the creativity and quality of our products is way ahead of competition.
+Our service, too, is better than the best in the world and all our products are designed for Android platform.
+We are headquartered in Mumbai but we have presence in all major cities and TIER-2 cities in India." />
+
+</RelativeLayout>

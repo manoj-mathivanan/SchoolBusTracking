@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;fonts&apos; to &apos;assets&apos;&#x0D;&#x0A;- Original project: &apos;SchoolApp&apos;&#x0D;&#x0A;- Destination element: &apos;assets&apos;&#x0D;&#x0A;- Original element: &apos;fonts&apos;" description="Copy folder" element1="assets/fonts" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1449151887115" target="/SchoolAdminApp/assets" units="0" version="1.0"/>
+</session>

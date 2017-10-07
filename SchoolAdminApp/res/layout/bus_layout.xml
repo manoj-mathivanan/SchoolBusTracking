@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/entry1"
+        android:layout_toRightOf="@+id/status"
+        android:text="Loading.."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/exit2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/exit2"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/side_arrow_icon" />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vehicle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/vehicle"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/dot_green" />
+
+    <TextView
+        android:id="@+id/exit2"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entry2"
+        android:layout_alignBottom="@+id/entry2"
+        android:layout_marginRight="9dp"
+        android:layout_toLeftOf="@+id/arrow"
+        android:text=""
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/entry2"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/exit1"
+        android:layout_alignBottom="@+id/exit1"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/exit2"
+        android:text=""
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/exit1"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entry1"
+        android:layout_alignBottom="@+id/entry1"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/entry2"
+        android:text=""
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/entry1"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vehicle"
+        android:layout_alignBottom="@+id/vehicle"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/exit1"
+        android:text=""
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/entry1am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/entry1"
+        android:layout_alignRight="@+id/entry1"
+        android:layout_below="@+id/status"
+        android:text="AM"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/exit1am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exit1"
+        android:layout_alignRight="@+id/exit1"
+        android:layout_below="@+id/status"
+        android:gravity="center"
+        android:text="AM"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/entry2am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/entry2"
+        android:layout_alignRight="@+id/entry2"
+        android:layout_below="@+id/status"
+        android:gravity="center"
+        android:text="AM"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/exit2am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exit2"
+        android:layout_alignRight="@+id/exit2"
+        android:layout_below="@+id/status"
+        android:paddingBottom="7dp"
+        android:gravity="center"
+        android:text="AM"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="8dp" />
+
+</RelativeLayout>

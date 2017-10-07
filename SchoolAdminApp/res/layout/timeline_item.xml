@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    tools:context="com.saratrak.sisschool.MainActivity" >
+
+    <ImageView
+        android:id="@+id/time_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:src="@drawable/alerts_unread_icon" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/time_img"
+        android:text=""
+        android:textColor="#1d1d26" />
+
+    <TextView
+        android:id="@+id/time_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/time_text"
+        android:layout_below="@+id/time_text"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/home_time_icon"
+        android:text=""
+        android:textColor="#666666" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time_time"
+        android:layout_alignBottom="@+id/time_time"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/time_time"
+        android:drawableLeft="@drawable/engineon"
+        android:text=""
+        android:textColor="#666666"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/time_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:drawableLeft="@drawable/speedicon"
+        android:text=""
+        android:textColor="#666666"
+        android:visibility="invisible" />
+    
+</RelativeLayout>
